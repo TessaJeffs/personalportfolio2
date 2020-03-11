@@ -15,9 +15,9 @@ function populateNav(species) {
         listItem.textContent = species.name
 
         speciesAnchor.addEventListener('click', event => {
-// store the name of thelist item clicked on
+
             let speciesName = event.target.textContent
-            const foundSpecies = species.find (species => species.name === speciesName)
+            const foundSpecies = species.find(species => species.name ===speciesName)
             console.log(foundSpecies)
             populateSpeciesView (foundSpecies)
         })
@@ -33,8 +33,8 @@ function populateSpeciesView (speciesData) {
     removeChildren(speciesView)
     let imageNum = getLastNumber(speciesData.url)
     let speciesImage = document.createElement('img')
-    shipImage.src = `https://starwars-visualguide.com/assets/img/starships/${imageNum}/.jpg`
-    speciesView.appendChild(shipImage)
+    speciesImage.src = `https://starwars-visualguide.com/assets/img/species/${imageNum}/.jpg`
+    speciesView.appendChild(speciesImage)
 }
-
+// https://starwars-visualguide.com/assets/img/species/1.jpg
 populateNav (species)
