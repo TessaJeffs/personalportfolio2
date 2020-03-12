@@ -1,18 +1,18 @@
 :root {
     box-sizing: border-box;
 }
-
-.container {
-    display: flex;
-}
 nav {
     display:flex;
 }
-
+header footer {
+    display:flex;
+    justify-content: center;
+}
 .nav { 
 padding-right:.5rem;
 width: 15rem;
 display:flex;
+border: black 1px solid;
 }
 
 a { text-decoration:

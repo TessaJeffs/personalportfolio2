@@ -7,6 +7,9 @@ const navList = document.querySelector('.navList')
 
 const speciesView = document.querySelector("#main")
 
+const cardInfo = document.querySelector(".cardcontent")
+// take card information from bulma
+
 function populateNav(species) {
     species.forEach(singleSpecies => {
         let speciesAnchor = document.createElement ('a')
@@ -34,6 +37,10 @@ function populateSpeciesView (speciesData) {
     let imageNum = getLastNumber(speciesData.url)
     let speciesImage = document.createElement('img')
     speciesImage.src = `https://starwars-visualguide.com/assets/img/species/${imageNum}.jpg`
+   speciesImage.addEventListener ('error', event => {
+        speciesImage.hidden = true
+   
+       }) 
     speciesView.appendChild(speciesImage)
 }
 // https://starwars-visualguide.com/assets/img/species/1.jpg
