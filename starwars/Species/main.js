@@ -17,9 +17,9 @@ function populateNav(species) {
         speciesAnchor.addEventListener('click', event => {
 
             let speciesName = event.target.textContent
-            const foundSpecies = species.find (species => species.name === speciesName )
-            // species uncaught TypeError species.find is not a function
-            console.log(foundSpecies);
+            const foundSpecies = species.find(species=>species.name===speciesName)
+            //uncaught TypeError: species.find is not a function at main.js:20
+            console.log(foundSpecies)
             populateSpeciesView (foundSpecies)
         })
 
