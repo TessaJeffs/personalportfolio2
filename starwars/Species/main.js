@@ -18,7 +18,6 @@ function populateNav(species) {
 
             let speciesName = event.target.textContent
             const foundSpecies = species.find(singleSpecies => singleSpecies.name === speciesName)
-            //uncaught TypeError: species.find is not a function at main.js:20
             console.log(foundSpecies)
             populateSpeciesView(foundSpecies)
         })

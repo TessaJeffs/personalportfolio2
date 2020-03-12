@@ -9,9 +9,9 @@ nav {
     display:flex;
 }
 
-.nav { border:solid 2px black;
-padding-right:1rem;
-width: 50rem;
+.nav { 
+padding-right:.5rem;
+width: 15rem;
 display:flex;
 }
 
@@ -26,4 +26,7 @@ li{
 a > img {
     height: 18rem;
     margin: 4px;
+}
+.speciesdiv{
+    display:flex;
 }
