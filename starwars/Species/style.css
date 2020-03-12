@@ -5,9 +5,14 @@
 .container {
     display: flex;
 }
+nav {
+    display:flex;
+}
 
 .nav { border:solid 2px black;
 padding-right:1rem;
+width: 50rem;
+display:flex;
 }
 
 a { text-decoration:
@@ -16,4 +21,9 @@ font-size: 1.25rem;
 
 li{
     list-style-type: none
+}
+
+a > img {
+    height: 18rem;
+    margin: 4px;
 }

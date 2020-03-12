@@ -8,19 +8,19 @@ const navList = document.querySelector('.navList')
 const speciesView = document.querySelector("#main")
 
 function populateNav(species) {
-    species.forEach(species => {
+    species.forEach(singleSpecies => {
         let speciesAnchor = document.createElement ('a')
         speciesAnchor.href ='#'
         let listItem = document.createElement ('li')
-        listItem.textContent = species.name
+        listItem.textContent = singleSpecies.name
 
         speciesAnchor.addEventListener('click', event => {
 
             let speciesName = event.target.textContent
-            const foundSpecies = species.find(species=>species.name===speciesName)
+            const foundSpecies = species.find(singleSpecies => singleSpecies.name === speciesName)
             //uncaught TypeError: species.find is not a function at main.js:20
             console.log(foundSpecies)
-            populateSpeciesView (foundSpecies)
+            populateSpeciesView(foundSpecies)
         })
 
         speciesAnchor.appendChild(listItem)
@@ -34,7 +34,7 @@ function populateSpeciesView (speciesData) {
     removeChildren(speciesView)
     let imageNum = getLastNumber(speciesData.url)
     let speciesImage = document.createElement('img')
-    speciesImage.src = `https://starwars-visualguide.com/assets/img/species/${imageNum}/.jpg`
+    speciesImage.src = `https://starwars-visualguide.com/assets/img/species/${imageNum}.jpg`
     speciesView.appendChild(speciesImage)
 }
 // https://starwars-visualguide.com/assets/img/species/1.jpg
