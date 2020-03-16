@@ -1,6 +1,6 @@
  :root {
     box-sizing: border-box;
-    background-color: #dfdfdf;
+    background-color: #000000;
 }
 
 a > img {
@@ -15,4 +15,31 @@ button {
     background-color:black;
     color:white;
     font-weight: 500;
+    margin-top:5rem;
+    margin-bottom:2rem;
 }
+
+#navbar {
+    display:flex;
+    justify-content: flex-end;
+    width: 100%;
+    background-color: rgb(68, 52, 75);
+    position:fixed;
+    height: 3rem;
+    color: white;
+    align-items: center;
+    }
+    .nav-list {display: flex;
+    list-style: none;
+    font-size: 2rem;
+    font-weight: 200;
+    color: white;
+    }
+    .nav-list a {
+    text-decoration:none;
+    font-size:1rem;
+    color: white;
+    display:flex;
+    padding-left: 2.5em;
+    padding-right:2.5em;
+    }
