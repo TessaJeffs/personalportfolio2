@@ -45,3 +45,4 @@ function populateSpeciesView (speciesData) {
 }
 // https://starwars-visualguide.com/assets/img/species/1.jpg
 populateNav (species)
+//need to do a push
