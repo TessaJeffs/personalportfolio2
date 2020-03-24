@@ -33,15 +33,21 @@ li{
     margin-left: 1rem;
 }
 
-a > img {
+img {
     height: 18rem;
     margin: 4px;
+    border: yellow 2px solid;
+    border-radius: 50px;
+
 }
-a {color:white;}
+
+a:link{color:white;}
+a:visited{color:yellow;}
 .speciesdiv{
     display:flex;
     padding-top:1rem;
 }
+
 
 #navbar {
     display:flex;
