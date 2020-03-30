@@ -7,19 +7,22 @@ font: 1em "Raleway", sans-serif;}
 nav {
     display:flex;
 }
-header .footer {
+header footer {
     display:flex;
     justify-content: center;
 }
 .nav { 
-padding-right:1rem;
-width: 15rem;
-display:flex;
-border: black 1px solid;
+padding:1rem;
+margin: 1rem;
+border: yellow 1px solid;
+border-radius: 30px;
+display: flex;
+justify-content: center;
 }
 h1 {
-    display:flex;
-   justify-content: center;
+  display:flex;
+  margin-left: 1.4rem;
+   justify-content: start;
    padding-top: 3rem;
    color: white;
 }
@@ -34,19 +37,27 @@ li{
 }
 
 img {
-    height: 18rem;
-    margin: 4px;
+    height: 20rem;
+    margin: 10px;
     border: yellow 2px solid;
     border-radius: 50px;
+    display: flex;
+    justify-content: center;
+
 
 }
 
 a:link{color:white;}
 a:visited{color:yellow;}
-.speciesdiv{
-    display:flex;
-    padding-top:1rem;
+a:hover{color:orange}
+
+
+.speciesdiv {
+    align-items: start;
+    display: flex;
 }
+   
+
 
 
 #navbar {
